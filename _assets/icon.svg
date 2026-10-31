@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="JZSTOKEN">
+  <rect width="128" height="128" rx="28" fill="#101827"/>
+  <path d="M85 30H46c-9 0-16 7-16 16v8h20v-4c0-3 2-5 5-5h22L39 98h44c9 0 16-7 16-16v-8H79v4c0 3-2 5-5 5H60l38-53z" fill="#F4C95D"/>
+  <circle cx="98" cy="30" r="8" fill="#4FD1C5"/>
+</svg>
