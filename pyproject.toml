@@ -1,0 +1,27 @@
+[project]
+name = "jzstoken"
+version = "0.1.0"
+description = "JZSTOKEN model provider for Dify"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "dify_plugin>=0.9.0,<0.11.0",
+    "requests>=2.32.4,<3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3,<10",
+    "ruff>=0.15.14,<1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["B", "E", "F", "I", "UP"]

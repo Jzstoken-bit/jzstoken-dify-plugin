@@ -1,0 +1,42 @@
+version: 0.1.0
+type: plugin
+author: jzstoken-bit
+name: jzstoken
+repo: https://github.com/Jzstoken-bit/jzstoken-dify-plugin
+contact: jzstoken-bit@users.noreply.github.com
+label:
+  en_US: JZSTOKEN
+description:
+  en_US: Use JZSTOKEN's OpenAI-compatible Chat Completions API with Dify.
+icon: icon.svg
+icon_dark: icon-dark.svg
+resource:
+  memory: 268435456
+  permission:
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+plugins:
+  models:
+    - provider/jzstoken.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2026-10-31T00:00:00Z
+privacy: PRIVACY.md
+verified: false
+network:
+  domains:
+    - jzstoken.com
